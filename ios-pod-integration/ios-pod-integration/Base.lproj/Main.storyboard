@@ -18,36 +18,47 @@
                             <userLayoutGuide location="598" affinity="minY"/>
                         </userGuides>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hq-OR-D8f">
-                                <rect key="frame" x="161.5" y="438" width="91" height="30"/>
-                                <state key="normal" title="Generate key"/>
-                                <connections>
-                                    <action selector="gen_key:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rwr-dx-Oqx"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Luo-N8-UpD">
-                                <rect key="frame" x="20" y="476" width="374" height="372"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="egu-OU-OqY">
+                                <rect key="frame" x="20" y="280.5" width="374" height="345.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hq-OR-D8f">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="138"/>
+                                        <state key="normal" title="Generate key"/>
+                                        <connections>
+                                            <action selector="gen_key:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rwr-dx-Oqx"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" text="PubAddr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NF-rQ-fXH">
+                                        <rect key="frame" x="0.0" y="138" width="374" height="20.5"/>
+                                        <viewLayoutGuide key="safeArea" id="h9I-7h-LMK"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Luo-N8-UpD">
+                                        <rect key="frame" x="0.0" y="158.5" width="374" height="187"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Luo-N8-UpD" firstAttribute="top" secondItem="3NF-rQ-fXH" secondAttribute="bottom" id="lTm-Gm-XJM"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Luo-N8-UpD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7P4-Ha-94H"/>
-                            <constraint firstItem="Luo-N8-UpD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Pqc-WG-HRR"/>
-                            <constraint firstItem="6Hq-OR-D8f" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bwc-qi-ogh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Luo-N8-UpD" secondAttribute="bottom" constant="14" id="c6U-op-cvV"/>
-                            <constraint firstItem="Luo-N8-UpD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cax-6J-ajK"/>
-                            <constraint firstItem="Luo-N8-UpD" firstAttribute="centerX" secondItem="6Hq-OR-D8f" secondAttribute="centerX" id="dQP-ZS-Qb9"/>
-                            <constraint firstItem="6Hq-OR-D8f" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="jLe-6s-8yb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Luo-N8-UpD" secondAttribute="trailing" constant="20" id="mDE-sY-Qg9"/>
-                            <constraint firstItem="Luo-N8-UpD" firstAttribute="top" secondItem="6Hq-OR-D8f" secondAttribute="bottom" constant="8" id="mP6-QO-tW3"/>
+                            <constraint firstItem="egu-OU-OqY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="EgK-Q8-K9z"/>
+                            <constraint firstItem="egu-OU-OqY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Gx6-jB-5jA"/>
+                            <constraint firstItem="egu-OU-OqY" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.903382" id="Tzy-fB-ahR"/>
+                            <constraint firstItem="egu-OU-OqY" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.422372" id="eOH-r9-9yl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="pub_label" destination="3NF-rQ-fXH" id="Xk7-aG-xPF"/>
                         <outlet property="seed_tv" destination="Luo-N8-UpD" id="8g9-l6-bIQ"/>
                     </connections>
                 </viewController>
