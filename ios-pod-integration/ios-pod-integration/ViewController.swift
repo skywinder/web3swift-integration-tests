@@ -7,14 +7,19 @@
 //
 
 import UIKit
+import web3swift
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var seed_tv: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
 
-
+    @IBAction func gen_key(_ sender: Any) {
+    }
+    
 }
 
