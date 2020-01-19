@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-ios-pod-integration/Pods-ios-pod-integration-frameworks.sh
+${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework
+${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework
+${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework
+${BUILT_PRODUCTS_DIR}/Result/Result.framework
+${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework
+${BUILT_PRODUCTS_DIR}/scrypt/scrypt.framework
+${BUILT_PRODUCTS_DIR}/secp256k1_ios/secp256k1_ios.framework
+${BUILT_PRODUCTS_DIR}/web3swift/web3swift.framework
